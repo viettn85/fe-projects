@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,22 +7,128 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body data-spy="scroll" data-target="#menu">
+	<div id="home">
+		<nav class="navbar navbar-dark navbar-expand-md fixed-top">
+			<!-- <div class="container-fluid"> -->
+			<a class="navbar-brand" href="#"><img src="./img/nest.png" /></a>
+			<!-- </div> -->
+			<button class="toggler-toggler" type="button" data-toggle="collapse" data-target="#menu">
+				<span class="navbar-toggler-icon" />
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+					<li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+					<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="landing">
+		<div class="home-wrap">
+			<div class="home-inner"></div>
+		</div>
+	</div>
+
+	<div class="caption center-block text-center">
+		<h3>Nest Responsive Bootstrap Theme</h3>
+		<a class="btn btn-outline-light" href="#about">Get Started</a>
+	</div>
+	<div id="about">
+		<div class="jumbotron">
+			<h3 class="heading">About</h3>
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<h4>Full Screen</h4>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, fuga accusantium? Aut iste,
+						facere vero maiores illo perferendis nisi debitis ducimus laboriosam ipsam eius ad sapiente!
+						Perferendis laborum porro fugiat.</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<h4>Responsive</h4>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, fuga accusantium? Aut iste,
+						facere vero maiores illo perferendis nisi debitis ducimus laboriosam ipsam eius ad sapiente!
+						Perferendis laborum porro fugiat.</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<h4>UI Friendly</h4>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, fuga accusantium? Aut iste,
+						facere vero maiores illo perferendis nisi debitis ducimus laboriosam ipsam eius ad sapiente!
+						Perferendis laborum porro fugiat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="portfolio">
+		<div class="container-fluid padding">
+			<h3 class="heading">Portfolio</h3>
+			<div class="row no-padding">
+				<div class="col-md-6"><img src="./img/1.png" alt="portfolio 1" class="portfolio"></div>
+				<div class="col-md-6"><img src="./img/2.png" alt="portfolio 2" class="portfolio"></div>
+				<div class="col-md-6"><img src="./img/3.png" alt="portfolio 3" class="portfolio"></div>
+				<div class="col-md-6"><img src="./img/4.png" alt="portfolio 4" class="portfolio"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="testimonials">
+		<h3 class="heading">Testimonials</h3>
+		<div class="row padding">
+			<div class="col-md-6">
+				<div class="card text-center">
+					<img src="./img/5.png" alt="" class="card-img-top">
+					<div class="card-body">
+						<h4>Micheal Jackson</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem corrupti maxime
+							animi. Ducimus iusto asperiores illum magni ipsa eius beatae ratione officia vel porro sit
+							totam excepturi tempora, magnam commodi.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card text-center">
+					<img src="./img/6.png" alt="" class="card-img-top">
+					<div class="card-body">
+						<h4>Britney Spears</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem corrupti maxime
+							animi. Ducimus iusto asperiores illum magni ipsa eius beatae ratione officia vel porro sit
+							totam excepturi tempora, magnam commodi.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contact">
+		<div class="container-fluid footer">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-center">
+					<img src="./img/nest.png">
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi nobis repudiandae aspernatur neque
+						dolores incidunt, at quam atque praesentium ut laudantium corporis animi earum! Labore
+						necessitatibus nulla veniam quas sint!</p>
+					<strong>Our Location</strong>
+					<p>Address</p>
+					<strong>Contact Info</strong>
+					<p>124356758697</p>
+					<p>email@abc.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
 
 
-<!--- Script Source Files -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<!--- Script Source Files -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
-
-
-
-
-<!--- Check out my courses! -->
-<div class="udemy-course" style="position: fixed; bottom: 0; right: 0; margin-bottom: -5px; z-index: 100;">
-  <a href="https://w3newbie.com/courses" target="_blank" style="z-index: 999!important; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/nuno-course-banner.png" style="max-width: 100%; min-width: 100%;"></a>
-</div>

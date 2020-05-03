@@ -1,5 +1,70 @@
 body {
   overflow-x: hidden; /*--right gutter fix--*/
+  font-family: sans-serif;
+  color: #505962;
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar {
+  text-transform: uppercase;
+  background-color: #505962;
+}
+
+.home-inner {
+  background-image: url("./img/landing.png");
+}
+
+.caption {
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  color: white;
+}
+
+.caption h3 {
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+h3.heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 1.9rem;
+}
+
+.padding {
+  padding: 2rem 0;
+}
+
+img.portfolio {
+  width: 100%;
+}
+
+.col-md-6 {
+  padding: 0;
+}
+
+.footer .row {
+  background-color: #505962;
+  color: white;
+  padding: 1rem 2rem 3rem;
+}
+
+.footer img {
+  height: 2rem;
 }
 
 /*--- iOS Landing Page Fix --*/
