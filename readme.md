@@ -17,5 +17,5 @@ I have been learning knowledge and skills from these tutorials to improve my kno
 
 Useful cheatsheets from the Internet
 
-- [link](https://wordpress.com/support/markdown-quick-reference/ "Markdown Cheatsheet B-)")
-- [link](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf "VS Code Keyboard Shortcuts for macOS")
+- [Markdown Cheatsheet B-)](https://wordpress.com/support/markdown-quick-reference/ "Markdown Cheatsheet B-)")
+- [VS Code Keyboard Shortcuts for macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf "VS Code Keyboard Shortcuts for macOS")
