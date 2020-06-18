@@ -5,13 +5,6 @@ import { connect } from 'react-redux';
 import { setName } from '../actions/userActions';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      username: 'Ducky',
-    };
-  }
-
   render() {
     return (
       <div className="container">
@@ -28,6 +21,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log('mapStateToProps');
   return {
     user: state.user,
     math: state.math,
@@ -35,6 +29,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
+  console.log('mapDispatchToProps');
   return {
     setName: (name) => {
       dispatch(setName(name));

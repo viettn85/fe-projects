@@ -1,6 +1,9 @@
 import React from 'react';
 
 export const User = (props) => {
+  {
+    console.log('Reload');
+  }
   return (
     <div>
       <div className="row">
