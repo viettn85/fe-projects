@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accordion
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .accordion {
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            background-color: #eee;
+            color: #444;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            transition: 0.5s;
+            padding: 18px;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            background-color: white;
+            padding: 0 18px;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .accordion:after {
+            content: '\2795';
+            /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796";
+            /* Unicode character for "minus" sign (-) */
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#menu">
+    <div class="container pt-5">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias quasi ratione beatae deleniti
+                perspiciatis magni harum laborum minus voluptates fuga, error, ipsum nihil fugit! Rerum porro optio at
+                sapiente.</p>
+        </div>
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias quasi ratione beatae deleniti
+                perspiciatis magni harum laborum minus voluptates fuga, error, ipsum nihil fugit! Rerum porro optio at
+                sapiente.</p>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias quasi ratione beatae deleniti
+                perspiciatis magni harum laborum minus voluptates fuga, error, ipsum nihil fugit! Rerum porro optio at
+                sapiente.</p>
+        </div>
+    </div>
+
+    <!--- Script Source Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var accArray = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < accArray.length; i++) {
+            accArray[i].addEventListener("click", function () {
+                this.classList.toggle('active');
+                var panel = this.nextElementSibling
+                // if (panel.style.display === 'block') {
+                //     panel.style.display = 'none'
+                // } else {
+                //     panel.style.display = 'block'
+                // }
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            })
+
+
+        }
+    </script>
+</body>
+
+</html>
