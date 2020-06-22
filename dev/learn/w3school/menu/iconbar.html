@@ -5,12 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Icon Bar</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .icon-bar {
+            width: 6em;
+            background-color: #555;
+        }
+
+        .icon-bar>a {
+            display: block;
+            padding: 0.5em;
+            font-size: 2em;
+            text-align: center;
+            color: white;
+            transition: all 0.8s ease
+        }
+
+        .icon-bar>a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target="#menu">
 
-    <!--- Script Source Files -->
+    <div class="icon-bar">
+        <a href="active" class="active"><i class="fa fa-home"></i></a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-globe"></i></a>
+        <a href="#"><i class="fa fa-trash"></i></a>
     </div>
+
+    <!--- Script Source Files -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 

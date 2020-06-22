@@ -5,12 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Menu Icon</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <style>
+        .bar {
+            background-color: #000;
+            width: 35px;
+            height: 5px;
+            margin: 6px 0px 6px 6px
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            background-color: #000;
+            width: 35px;
+            height: 5px;
+            margin: 6px 0px 6px 6px;
+            transition: 0.3s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg) translate(-9px, 8px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target="#menu">
 
-    <!--- Script Source Files -->
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <br />
+    <div class='menu' onclick="changeMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
     </div>
+
+    <script type="text/javascript">
+        function changeMenu(x) {
+            x.classList.toggle('change');
+        }
+    </script>
+    <!--- Script Source Files -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
